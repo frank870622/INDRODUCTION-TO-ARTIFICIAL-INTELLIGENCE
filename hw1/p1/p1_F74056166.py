@@ -32,6 +32,7 @@ for x in range(x_range[0], x_range[1]+1):
         if z < bully_min:
             bully_min = z
 
+bully_min = round(bully_min, 3)
 print('bully_min: ' + str(bully_min))
 print('bully count: ' + str(bully_count))
 w.write("%.3f" % bully_min)
@@ -83,6 +84,7 @@ for i in range(initial_position_num):
             elif way.index(min(way)) is 3:
                 point_x = point_x + stepsize
         else:
+            start_min = round(start_min, 3);
             print("%.3f" % start_min)
             print('count: ' + str(hill_count))
             w.write("%.3f" % start_min)
